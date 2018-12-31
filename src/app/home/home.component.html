@@ -1,0 +1,47 @@
+<div id="home-container">
+  <div class="white-border-glass-box">
+    <div class="home-head-container">
+      <div class="row">
+        <div class="col-md-auto mar-top-15 mar-bot-15">
+          <div class="avatar-frame-online">
+            <img id="home-avatar-picture" src="assets/img/generic_avatar.png">
+          </div>
+        </div>
+        <div class="col mar-top-15 mar-bot-15">
+          <b>User</b>
+          <div>
+            <span>Online</span><br>
+            <span> < Write a personal message > </span>
+          </div>                    
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="white-container mar-top-15">
+    <div class="row">
+      <div class="col">
+          <input type="text" placeholder="Buscar" [(ngModel)]="query" class="form-control"/>
+      </div>
+      <div class="col-md-auto">
+        <img src="assets/img/logo_live_add.png" class="icon">
+      </div>
+    </div>
+    <hr/>
+    <!--NGmodel es una actualizacion de dos vias-->    
+    <h5>Amigos ({{friends.length}}/{{friends.length}})</h5>
+    <!--Directivas de angular *-->    
+      <!--</ng-container> no existe a la vista del usuario-->
+      <div class="disblo mar-bot-5" *ngFor="let user of friends | search: query;">    
+        <span class="is-clickable" routerLink="/conversation/{{user.uid}}">
+          <ng-container [ngSwitch]="user.status">        
+            <img class="status-logo" *ngSwitchCase="0" id="main-logo" src="assets/img/logo_live_offline.png" alt="logo platzinger">                
+            <img class="status-logo" *ngSwitchCase="1" id="main-logo" src="assets/img/logo_live_online.png" alt="logo platzinger">                
+            <img class="status-logo" *ngSwitchCase="2" id="main-logo" src="assets/img/logo_live_away.png" alt="logo platzinger">                
+            <img class="status-logo" *ngSwitchCase="3" id="main-logo" src="assets/img/logo_live_busy.png" alt="logo platzinger">                        
+          </ng-container>       
+          <b>{{user.nick}}</b> - {{user.email}}/
+          <small> {{user.subnick || 'No subnick'}}</small>           
+        </span>   
+      </div>    
+  </div>  
+</div>
