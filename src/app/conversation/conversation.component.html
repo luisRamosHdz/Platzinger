@@ -1,8 +1,60 @@
-<p>
-  <!--PIPES JSON FORMATEA A OBJETO (LO FORMATEA A JSON)-->
-  {{friend | json}}
-  {{price | number:'1.2-2'}}
-</p>
-<p>
-  {{today | date:'shortTime'}}
-</p>
+
+<div class="conversation-container">
+    <div class="container pad-top-45">      
+      <div class="row">
+        <div class="col-md-12 mar-bot-60">            
+          <div class="row">
+            <div class="col-md-3">
+              <div class="avatar-frame-online">
+                  <img id="home-avatar-picture" src="assets/img/generic_avatar.png" class="avatar-image img-fluid">
+              </div>
+            </div>
+            <div class="col-md-9">
+              <h4>User 1 (Online)</h4>
+              <div class="form-control area-conversation" disabled>
+                <div class="row">
+                  <div class="col-md-12">
+                    <b>User1</b><br>
+                    <span> Hi !!!!</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>                    
+        </div>
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="avatar-frame-online">
+                <img id="home-avatar-picture" src="assets/img/generic_avatar.png" class="avatar-image img-fluid">
+              </div>
+            </div>
+            <div class="col-md-9">
+              <textarea class="form-control">                
+              </textarea>
+              <div class="container-actions">
+                <div class="is-clickable">
+                    <img class="mar-min-right" src="assets/img/icons/regular_smile.gif">                
+                    <i class="fas fa-angle-down"></i>
+                </div>   
+                <div class="is-clickable mar-med-right">
+                  <img class="mar-min-right" src="assets/img/icons/wink_smile.gif">                
+                  <i class="fas fa-angle-down"></i>
+                </div> 
+                <div class="is-clickable mar-med-right mar-min-right">
+                  <img class="mar-min-right img-icon-bar" src="assets/img/zumbido.png">                                         
+                </div>                
+                <div>                  
+                  <label class="custom-file-upload">
+                    <input type="file">
+                    <i class="far fa-image"></i>
+                    Seleccionar imagen
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

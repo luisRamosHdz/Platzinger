@@ -1,3 +1,44 @@
-<p>
-  profile works!
-</p>
+<div id="profile-container">
+  <div class="container pad-top-45">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="avatar-frame-online">
+          <img id="home-avatar-picture" src="assets/img/generic_avatar.png" class="avatar-image img-fluid">
+        </div>
+        <hr>
+        <div>
+          <span>Cambiar foto</span><br>
+          <label class="custom-file-upload">
+            <input type="file">
+            Subir avatar
+          </label>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div>
+          <label fixed>Nick</label>
+          <input type="text" class="form-control">          
+        </div>
+        <div>
+          <label fixed>Subnick</label>
+          <input type="text" class="form-control">          
+        </div>
+         <div>
+          <label fixed>Email</label>
+          <input type="email" disabled class="form-control">          
+        </div>
+        <div>
+          <label fixed>status</label>
+          <select class="form-control">
+            <option value="online">Conectado</option>
+            <option value="Away">Ausente</option>
+            <option value="Busy">Ocupado</option>
+            <option value="AppearOffline">Desconectado</option>
+          </select>            
+        </div>
+        <hr>
+        <a class="btn btn-primary btn-block">Guardar</a>
+      </div>
+    </div>
+  </div>
+</div>

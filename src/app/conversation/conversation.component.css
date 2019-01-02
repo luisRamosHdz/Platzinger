@@ -1,0 +1,22 @@
+.conversation-container{
+    background-image: url('/assets/img/msnbg.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.area-conversation{
+    height: 450px;    
+}
+
+.container-actions{
+    display: inline-flex;
+    border: solid 1px rgba(0,0,0,0.2);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 100%;
+    padding: 4px;
+}
+
+.img-icon-bar{
+    width: 40px;
+}
