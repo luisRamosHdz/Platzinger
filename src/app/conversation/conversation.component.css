@@ -6,6 +6,7 @@
 
 .area-conversation{
     height: 450px;    
+    padding: 40px;
 }
 
 .container-actions{
@@ -19,4 +20,16 @@
 
 .img-icon-bar{
     width: 40px;
+}
+
+.message-me{
+    background-color:rgb(220,220,220);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.message-other{
+    background-color: rgb(135,206,235);
+    padding: 8px;
+    border-radius: 8px;
 }

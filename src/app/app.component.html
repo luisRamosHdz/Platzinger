@@ -1,5 +1,5 @@
-<app-menu></app-menu>
+<app-menu *ngIf="router.url!='/login'"></app-menu>
 <!--En esta etiqueta se inyecta el contenido de los componentes-->
-<div class="generalContent">
+<div [ngClass]="{'generalContent': router.url != '/login'}">
     <router-outlet ></router-outlet>
 </div>
